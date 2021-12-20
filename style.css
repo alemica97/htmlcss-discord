@@ -55,6 +55,33 @@ header > img{
 .row .col__down{
     width: 100%;
 }
+
+.col__up__left > img{
+    padding-top: 5px;
+}
+
+.col__up__right > a{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    float: right;
+    font-weight: 500;
+}
+
+.col__up__list li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+}
+
+/* .col__down .direct-link > a::before{
+    content: "&downarrow";
+} */
+
+
+
+
                   /* DEBUG */
 
 .debug .container{
@@ -79,6 +106,10 @@ header > img{
     min-height: 30px;
 }
 
-.debug .container .row .col__up{
-    width: calc(100% / 3);
+.debug .row .col__up__left, .debug .row .col__up__right{
+    width: 20%
+}
+
+.debug .container .row .col__up__center{
+    width: 60%;
 }
