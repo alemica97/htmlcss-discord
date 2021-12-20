@@ -35,7 +35,7 @@ header > img{
 .container{
     max-width: 960px;
     width: 90%;
-    height: 100%;
+    /* height: 100%; */
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -130,6 +130,9 @@ header > img{
     color: red;
 }
 
+.first-section-col-right, .second-section-col-left{
+    padding: 10% 0;
+}
 
                   /* DEBUG */
 
@@ -157,4 +160,20 @@ header > img{
 
 .debug .module{
     border: 2px solid rgb(255, 18, 18);
+}
+
+.debug .first-section-col-left{
+    width: calc((2 / 3) * 100%);
+}
+
+.debug .first-section-col-right{
+    width: calc((1 / 3) * 100%);
+}
+
+.debug .second-section-col-left{
+    width: calc((1 / 3) * 100%);
+}
+
+.debug .second-section-col-right{
+    width: calc((2 / 3) * 100%);
 }
