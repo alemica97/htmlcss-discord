@@ -36,6 +36,7 @@ header > img{
     width: 960px;
     height: 100%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .container .row{
@@ -75,20 +76,60 @@ header > img{
     color: white;
 }
 
-/* .col__down .direct-link > a::before{
-    content: "&downarrow";
-} */
+.col__down .direct-link a{
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-left: 15px;
+    display: inline-block;
+    font-weight: 600;
+}
 
+.col__down .direct-link :first-child{
+    background-color: white;
+}
 
+.col__down .direct-link :nth-child(2n){
+    background-color: #23272A;
+    color: white;
+}
 
+.col__down__wrapper{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row.jumbo_up{
+    height: 20%;
+}
+
+.row.jumbo_down{
+    height: 80%;
+}
+
+.debug .container .jumbo_down .col{
+    padding: 5% 0;
+}
+
+.col__down__wrapper .module :only-child{
+    color: white;
+}
+
+.module.title{
+    font-size: 22px;
+}
+
+.module.description{
+    font-size: 17px;
+}
 
                   /* DEBUG */
 
-.debug .container{
+/* .debug .container{
     height: 100%;
     padding: 20px;
     border: 2px solid orangered;
-}
+} */
 
 .debug header{
     border: 2px solid black;
@@ -96,7 +137,6 @@ header > img{
 
 .debug .container .row{
     border: 2px solid greenyellow;
-    min-height: 30px;
     padding: 15px;
     margin-bottom: 15px;
 }
@@ -112,4 +152,8 @@ header > img{
 
 .debug .container .row .col__up__center{
     width: 60%;
+}
+
+.debug .module{
+    border: 2px solid rgb(255, 18, 18);
 }
