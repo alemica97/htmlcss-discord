@@ -1,6 +1,7 @@
 html{
     font-size: 16px;
-    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Slab', serif;
 }
 
 *{
@@ -38,18 +39,51 @@ header > img{
 
 main section:nth-child(2n+0){
     background-color: #F6F6F6;
+    position: relative;
+}
+
+.wave{
+    width: 100%;
+    height: 70px;
+    color: #F6F6F6;
+}
+
+.wave-top{   
+    position: absolute;
+    left: 0;
+    bottom: 100%;   
+}
+
+.wave-bottom{
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    top: 100%;
 }
 
 .container{
     max-width: 960px;
     width: 90%;
-    /* height: 100%; */
     margin: 0 auto;
     padding: 20px 0;
 }
 
 .container .row{
     width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.row .col-up-left, .row .col-up-right{
+    width: 20%
+}
+
+.container .row .col-up-center{
+    width: 60%;
+}
+
+.col.col-up-right{
+    padding-top: 5px;
 }
 
 .clearfix::after{
@@ -72,7 +106,7 @@ main section:nth-child(2n+0){
 
 .col-up-right > a{
     background-color: white;
-    padding: 5px 20px;
+    padding: 5px 25px;
     border-radius: 20px;
     font-weight: 500;
     float: right;
@@ -86,6 +120,10 @@ main section:nth-child(2n+0){
 
 .col-up-list{
     text-align: center;
+}
+
+.module.title > h1{
+    font-size: calc(30px + 1.5vw);
 }
 
 .col-down .direct-link a{
@@ -108,7 +146,7 @@ main section:nth-child(2n+0){
 
 .col-down-wrapper .module :only-child{
     color: white;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .module.title{
@@ -120,18 +158,23 @@ main section:nth-child(2n+0){
 }
 
 .col-down-wrapper{
-    max-width: 700px;
+    max-width: 650px;
     margin: 0 auto;
     text-align: center;
 }
 
-/* .row.jumbo-row-up{
-    height: 25%;
+.img-wrapper{
+    width: 90%;
+    padding-top: 20px;
 }
 
-.row.jumbo-row-down{
-    height: 75%;
-} */
+.first-section-col-left, .second-section-col-right, .third-section-col-left{
+    width: calc((2 / 3) * 100%);
+}
+
+.first-section-col-right, .second-section-col-left, .third-section-col-right{
+    width: calc((1 / 3) * 100%);
+}
 
 .container .jumbo-row-down .col{
     padding: 5% 0;
@@ -145,9 +188,6 @@ main section:nth-child(2n+0){
     padding: 10% 0;
 }
 
-/* main .container .row .col {
-    min-height: 450px;
-} */
 .fourth-section-col-up, .fourth-section-col-center, .fourth-section-col-down{
     width: 100%;
 }
@@ -174,8 +214,15 @@ main section:nth-child(2n+0){
     font-weight: 600;
 }
 
-h3{
+section h3{
     margin-bottom: 25px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .module.bottom-title{
@@ -186,68 +233,83 @@ h3{
     padding: 25px;    
 }
 
+section img{
+    padding: 10% 0;
+}
+
+section .fourth-section-col-center img{
+    padding: 0 0;
+}
+
+
+.col-footer-left{
+    width: calc((2 / 6) * 100%);
+}
+
+.col-footer-right{
+    width: calc((1 / 6) * 100%);
+}
+
 footer{
     width: 100%;
     min-height: 550px;
     background-color: #23272A;
 }
 
+footer .footer-title{
+    color: #7289DA;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-right: 15px;
+}
+
 footer ul{
     line-height: 40px;
+    color: white;
+    padding-right: 10px;
 }
 
 footer .list-title{
-    color: mediumpurple;
+    color: #7289DA;
     font-weight: 700;
 }
-                  /* DEBUG */
 
-
-.debug .container .row{
-    padding: 15px;
-    margin-bottom: 15px;
+.icons-list li{
+    display: inline-block;
+    padding-left: 15px;
 }
 
-.debug .row .col-up-left, .debug .row .col-up-right{
-    width: 20%
+.icons-list{
+    margin-top: 15px;
 }
 
-.debug .container .row .col-up-center{
-    width: 60%;
+footer .footer-row{
+    border-bottom: 1px solid #7289DA;
 }
 
-.debug .first-section-col-left{
-    width: calc((2 / 3) * 100%);
+.row.footer-row-bottom{
+    width: 100%;
 }
 
-.debug .first-section-col-right{
-    width: calc((1 / 3) * 100%);
+.footer-bottom-col-left{
+    float: left;
 }
 
-.debug .second-section-col-left{
-    width: calc((1 / 3) * 100%);
+.footer-bottom-col-right{
+    float: right; 
 }
 
-.debug .second-section-col-right{
-    width: calc((2 / 3) * 100%);
+.footer-bottom-col-right > a{
+    background-color: #7289DA;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 20px;
+    display: inline-block;
 }
 
-.debug .third-section-col-left{
-    width: calc((2 / 3) * 100%);
-}
 
-.debug .third-section-col-right{
-    width: calc((1 / 3) * 100%);
-}
-
-.debug .col-footer-left{
-    width: calc((2 / 6) * 100%);
-}
-
-.debug .col-footer-right{
-    width: calc((1 / 6) * 100%);
-}
-
+/* so che è sbagliato ma non sapevo come farlo */
 select{
     padding: 2px 35px;
     background: none;
@@ -258,3 +320,5 @@ select{
     background-position: left;
     background-size: contain;
 }
+
+

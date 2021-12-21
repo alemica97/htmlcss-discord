@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Discord</title>
 </head>
-<body class="debug">
+<body>
 
     <header>
         <div class="container">
-
+            
             <div class="row jumbo-row-up clearfix">
-
+                <!-- divido l'header in due righe, la prima in tre colonne e la seconda larga il 100% -->
                 <div class="col col-up-left">
                     <img src="img/logo.svg">
                 </div>
@@ -47,8 +48,8 @@
                             <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiacchierare ogni giorno e trovarsi più spesso.</p>
                         </div>
                         <div class="module direct-link">
-                            <a href="">&downarrow; Scarica per Mac</a>
-                            <a href="">Apri Discord nel tuo browser</a> 
+                            <a href="#mac-download">&downarrow; Scarica per Mac</a>
+                            <a href="https://discord.com/">Apri Discord nel tuo browser</a> 
                         </div>
                     </div>
                 </div>
@@ -58,13 +59,15 @@
     </header>
 
     <main>
-
+        <!-- il main lo suddivido in quattro sezioni, le prime tre con una riga e due colonne, e l'ultima con tre righe -->
         <section>
             <div class="container">
                 <div class="row first-section-row clearfix">
 
                     <div class="col first-section-col-left">
-                        <img src="img/item1.svg">
+                        <div class="img-wrapper">
+                            <img src="img/item1.svg">
+                        </div>
                     </div>
                     <div class="col first-section-col-right">
                         <div class="module title">
@@ -78,7 +81,11 @@
             </div>
         </section>
         <section>
+            <svg class="wave wave-top" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path class="wavePath-haxJK1 animationPaused-2hZ4IO" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="currentColor"></path>
+            </svg>
             <div class="container">
+                
                 <div class="row second-section-row clearfix">
 
                     <div class="col second-section-col-left">
@@ -90,17 +97,25 @@
                         </div>
                     </div>
                     <div class="col second-section-col-right">
-                        <img src="img/item2.svg">
+                        <div class="img-wrapper">
+                            <img src="img/item2.svg">
+                        </div>  
                     </div>
                 </div>
             </div>
+            <svg class="wave wave-bottom" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path class="wavePath-haxJK1 animationPaused-2hZ4IO" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="currentColor"></path>
+            </svg>
         </section>
         <section>
             <div class="container">
                 <div class="row third-section-row clearfix">
 
                     <div class="col third-section-col-left">
-                        <img src="img/item3.svg">
+                        <div class="img-wrapper">
+                            <img src="img/item3.svg">
+
+                        </div>
                     </div>
                     <div class="col third-section-col-right">
                         <div class="module title">
@@ -114,6 +129,9 @@
             </div>
         </section>
         <section>
+            <svg class="wave wave-top" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path class="wavePath-haxJK1 animationPaused-2hZ4IO" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="currentColor"></path>
+            </svg>
             <div class="container">
                 <div class="row fourth-section-row-up clearfix">
                     <div class="col fourth-section-col-up">
@@ -139,7 +157,7 @@
                                 <h4>Pronto ad iniziare la tua avventura?</h4>
                             </div>
                             <div class="module bottom-link">
-                                <a href="">&downarrow; Scarica per Mac</a> 
+                                <a id="mac-download" href="">&downarrow; Scarica per Mac</a> 
                             </div>
                         </div>          
                     </div>
@@ -155,53 +173,74 @@
                     <div class="module footer-title">
                         <h3>Il tuo posto per parlare</h3>
                     </div>
-                    <div class="module ">
+                    <div class="module footer-selector">
                         <select id="nationality">
                             <option value="Italiano">Italiano</option>
                             <option value="Inglese">Inglese</option>
                             <option value="Francese">Francese</option>
                           </select>
                     </div>
+                    <div class="module footer-icons">
+                        <ul class="icons-list">
+                            <li><a href=""><i class="fab fa-twitter"></i></a></i></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col col-footer-right">
                     <ul>
                         <li class="list-title">Prodotto</li>
-                        <li>Scarica</li>
-                        <li>Perché Discord</li>
-                        <li>Nitro</li>
-                        <li>Sicurezza</li>
-                        <li>Assistenza</li>
+                        <li><a href="">Scarica</a></li>
+                        <li><a href="">Perché Discor</a></li>
+                        <li><a href="">Nitro</a></li>
+                        <li><a href="">Sicurezza</a></li>
+                        <li><a href="">Assistenza</a></li>
                     </ul>
                 </div>
                 <div class="col col-footer-right">
                     <ul>
-                        <li class="list-title">Prodotto</li>
-                        <li>Scarica</li>
-                        <li>Perché Discord</li>
-                        <li>Nitro</li>
-                        <li>Sicurezza</li>
-                        <li>Assistenza</li>
+                        <li class="list-title">Compagnia</li>
+                        <li><a href="">Chi siamo</a></li>
+                        <li><a href="">Lavora con noi</a></li>
+                        <li><a href="">Marchio</a></li>
+                        <li><a href="">Redazione</a></li>
+                        <li><a href="">Negozio</a></li>
                     </ul>
                 </div>
                 <div class="col col-footer-right">
                     <ul>
-                        <li class="list-title">Prodotto</li>
-                        <li>Scarica</li>
-                        <li>Perché Discord</li>
-                        <li>Nitro</li>
-                        <li>Sicurezza</li>
-                        <li>Assistenza</li>
+                        <li class="list-title">Risorse</li>
+                        <li><a href="">Scarica</a></li>
+                        <li><a href="">Perché Discor</a></li>
+                        <li><a href="">Nitro</a></li>
+                        <li><a href="">Sicurezza</a></li>
+                        <li><a href="">Assistenza</a></li>
+                        <li><a href="">Scarica</a></li>
+                        <li><a href="">Perché Discor</a></li>
+                        <li><a href="">Nitro</a></li>
+                        <li><a href="">Sicurezza</a></li>
+                        <li><a href="">Assistenza</a></li>
                     </ul>
                 </div>
                 <div class="col col-footer-right">
                     <ul>
-                        <li class="list-title">Prodotto</li>
-                        <li>Scarica</li>
-                        <li>Perché Discord</li>
-                        <li>Nitro</li>
-                        <li>Sicurezza</li>
-                        <li>Assistenza</li>
+                        <li class="list-title">Norme</li>
+                        <li><a href="">Scarica</a></li>
+                        <li><a href="">Perché Discor</a></li>
+                        <li><a href="">Nitro</a></li>
+                        <li><a href="">Sicurezza</a></li>
+                        <li><a href="">Assistenza</a></li>
                     </ul>
+                </div>
+            </div>
+            <div class="row footer-row-bottom clearfix">
+                <div class="col footer-bottom-col-left">
+                    <img src="img/logo.svg" alt="">
+                </div>
+                <div class="col footer-bottom-col-right">
+                    <a href="">Registrati</a>
                 </div>
             </div>
         </div>
