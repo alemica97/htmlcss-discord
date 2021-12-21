@@ -13,6 +13,10 @@ img{
     max-width: 100%;
 }
 
+ul, ol{
+    list-style: none;
+}
+
 a{
     text-decoration: none;
     color: currentColor;
@@ -68,17 +72,20 @@ main section:nth-child(2n+0){
 
 .col-up-right > a{
     background-color: white;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 20px;
-    float: right;
     font-weight: 500;
+    float: right;
 }
 
 .col-up-list li{
-    list-style: none;
     display: inline-block;
     padding: 10px 15px;
     color: white;
+}
+
+.col-up-list{
+    text-align: center;
 }
 
 .col-down .direct-link a{
@@ -184,20 +191,21 @@ footer{
     min-height: 550px;
     background-color: #23272A;
 }
-                  /* DEBUG */
 
-.debug .container{
-    border: 2px solid orangered;
-} 
-
-.debug .container .row{
-    border: 2px solid greenyellow;
-    padding: 15px;
-    margin-bottom: 15px;
+footer ul{
+    line-height: 40px;
 }
 
-.debug .container .row .col{
-    border: 2px solid yellow;
+footer .list-title{
+    color: mediumpurple;
+    font-weight: 700;
+}
+                  /* DEBUG */
+
+
+.debug .container .row{
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
 .debug .row .col-up-left, .debug .row .col-up-right{
@@ -206,10 +214,6 @@ footer{
 
 .debug .container .row .col-up-center{
     width: 60%;
-}
-
-.debug .module{
-    border: 2px solid rgb(255, 18, 18);
 }
 
 .debug .first-section-col-left{
